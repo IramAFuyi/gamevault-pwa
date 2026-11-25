@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111827">
+    <meta name="description" content="Catálogo de videojuegos GameVault">
+
+    <title>GameVault</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png"
+      href="icons/icon-192.png">
+</head>
+<body>
+
+    <header>
+        <h1>🎮 GameVault</h1>
+        <p>Descubre tu próximo videojuego favorito</p>
+        <span id="connection-status" class="online">
+            ● Conectado a la red
+        </span>    
+    </header>
+
+    <main>
+        <section class="filters">
+            <input type="search" id="search"
+                   placeholder="Buscar videojuego...">
+
+            
+            <select id="genre" aria-label="Filtrar por género">
+                <option value="all">Todos los géneros</option>
+                <option value="Acción">Acción</option>
+                <option value="Aventura">Aventura</option>
+                <option value="RPG">RPG</option>
+                <option value="Deportes">Deportes</option>
+                <option value="Terror">Terror</option>
+                <option value="Carreras">Carreras</option>
+                <option value="Shooter">Shooter</option>
+                <option value="Plataformas">Plataformas</option>
+                <option value="Peleas">Peleas</option>
+                <option value="Simulación">Simulación</option>
+            </select>
+
+        </section>
+
+        <p id="game-count" aria-live="polite">
+            30 de 30 videojuegos
+        </p>
+        <section id="game-list" class="game-grid">
+        </section>
+    </main>
+
+    <footer>
+        <p>GameVault | Aplicaciones Web Progresivas</p>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+</body>
+</html>
